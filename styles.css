@@ -109,8 +109,8 @@ body {
 }
 
 .hero-description {
-  font-size: clamp(1.125rem, 3vw, 1.5rem);
-  color: var(--muted-foreground);
+  font-size: clamp(1.225rem, 3.3vw, 1.65rem);
+  color: #505050;
   max-width: 42rem;
   margin: 0 auto 2rem;
   text-wrap: pretty;
