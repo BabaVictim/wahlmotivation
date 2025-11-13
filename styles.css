@@ -525,3 +525,52 @@ body {
 html {
   scroll-behavior: auto;
 }
+
+/* Illustration Sections */
+.illustration-section {
+  padding: 5rem 0;
+  background-color: rgba(245, 245, 245, 0.3);
+}
+
+.illustration-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .illustration-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.illustration-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: all 0.7s ease-out, box-shadow 0.2s;
+  width: 600px;
+}
+
+.illustration-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.illustration-card:hover {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.illustration-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
