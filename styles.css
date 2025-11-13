@@ -56,7 +56,7 @@ body {
 .sky-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, #bae6fd, #e0f2fe, transparent);
+  background: linear-gradient(to bottom, transparent, rgba(224, 242, 254, .95), #bae6fd);
 }
 
 .mountain-layer {
